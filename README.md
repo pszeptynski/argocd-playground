@@ -22,7 +22,13 @@ kubectl apply -f argocd-crd-nxing.yaml
 kubectl get app -n argocd
 ```
 
-4. Log in to Argo CD web UI. Click your app, click Sync and see all the blows and whistles in graphical form.
-5. Play with filters to see more details.
+4. Log in to Argo CD web UI. Click your app, click Sync and see all the blows and whistles in graphical form. Play with filters to see more details.
+5. Check in console because why would Argo lie:
+
+```
+kubectl get deploy -n nginx-demo
+kubectl get svc -n nginx-demo
+kubectl get cm -n nginx-demo
+```
 
 
