@@ -52,4 +52,13 @@ kubectl get cm -n nginx-helm-staging
 kubectl get cm -n nginx-helm-staging -o yaml | grep "version:"
 ```
 
+4. Repeat the steps for prod env.
+
+```
+kubectl apply -f argocd-crd-helm-nginx-prod.yaml
+```
+
+5. Nginx-prod app should appear in Argo CD web UI. This time with two pods after sync according to parameters in values-prod.yaml.
+6. Check in console with commands as in 3. using `nginx-helm-prod` as namespace.
+
 
