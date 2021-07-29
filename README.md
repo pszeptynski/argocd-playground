@@ -1,6 +1,6 @@
 # argocd-playground
 
-Just a short info without all the details.
+Just a short info without all the details. More here: https://argo-cd.readthedocs.io/en/stable/getting_started/
 
 
 1. Deploy Argo CD
