@@ -52,7 +52,7 @@ kubectl get cm -n nginx-helm-staging
 kubectl get cm -n nginx-helm-staging -o yaml | grep "version:"
 ```
 
-4. Repeat the steps for prod env.
+4. Repeat the steps and deploy the Helm chart for prod env.
 
 ```
 kubectl apply -f argocd-crd-helm-nginx-prod.yaml
